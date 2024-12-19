@@ -6,7 +6,7 @@ import Dashboard from "./sidebarButton/Dashboard";
 import Media from "./sidebarButton/Media";
 import Campaigns from "./sidebarButton/Campaigns";
 import Approval from "./sidebarButton/Approval";
-import Screens from "./sidebarButton/Screens";
+import Locations from "./sidebarButton/Locations";
 import Billing from "./sidebarButton/Billing";
 import Statistics from "./sidebarButton/Statistics";
 import Users from "./sidebarButton/Users";
@@ -23,7 +23,7 @@ const SideBar = () => {
         <Media pathname={pathname} />
         <Campaigns pathname={pathname} />
         <Approval pathname={pathname} />
-        <Screens pathname={pathname} />
+        <Locations pathname={pathname} />
         <Billing pathname={pathname} />
         <Statistics pathname={pathname} />
         <Users pathname={pathname} />

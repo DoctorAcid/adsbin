@@ -4,11 +4,11 @@ interface Props {
   pathname: string;
 }
 
-const Screens = ({ pathname }: Props) => {
+const Locations = ({ pathname }: Props) => {
   return (
     <div
       className={`group flex items-center py-4 px-6 gap-6 cursor-pointer border-b-[1px] border-b-lightGray bg-white hover:bg-primary hover:bg-opacity-10 transition-all ease-in-out duration-300 ${
-        pathname === "/screens" ? "border-r-4 border-primary" : ""
+        pathname === "/locations" ? "border-r-4 border-primary" : ""
       } `}
     >
       {/* icon */}
@@ -22,19 +22,19 @@ const Screens = ({ pathname }: Props) => {
         >
           <path
             className={`transition-all ease-in-out duration-300 ${
-              pathname === "/screens"
+              pathname === "/locations"
                 ? "stroke-accent"
                 : "group-hover:stroke-primary stroke-black"
             }`}
             d="M2 12C2 12 5 5 12 5C19 5 22 12 22 12C22 12 19 19 12 19C5 19 2 12 2 12Z"
             stroke="none"
-            strokeWidth={pathname === "/screens" ? "2" : "1.5"}
+            strokeWidth={pathname === "/locations" ? "2" : "1.5"}
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             className={`transition-all ease-in-out duration-300 ${
-              pathname === "/screens"
+              pathname === "/locations"
                 ? "stroke-accent"
                 : "group-hover:stroke-primary stroke-black"
             }`}
@@ -49,11 +49,11 @@ const Screens = ({ pathname }: Props) => {
 
       {/* title */}
       <div className="flex flex-col text-secondary">
-        <h4>Screens</h4>
-        <h6 className="">Signage Displays</h6>
+        <h4>Locations</h4>
+        <h6 className="">Signage Displays Locations</h6>
       </div>
     </div>
   );
 };
 
-export default Screens;
+export default Locations;
